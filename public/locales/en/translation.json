@@ -1,0 +1,20 @@
+{
+  "item": {
+    "bookBtn": "Book",
+    "detailsBtn": "View details"
+  },
+  "itemContent": {
+    "category": "Category",
+    "gear": "Gear",
+    "seats": "Seats",
+    "doors": "Doors",
+    "hasAC": "Air conditioning",
+    "hasSanitationGuarantee": "Sanitation guarantee",
+    "supplier": "Supplier",
+    "name": "Name"
+  },
+  "detailedView":{
+    "title": "Vehicle Details",
+    "btn": "Close"
+  }
+}

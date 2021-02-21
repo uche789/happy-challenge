@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import DetailedView from './DetailedView';
+import data from '../data'
 
 jest.mock('react-i18next', () => ({
   // this mock makes sure any components using the translate hook can use it without a warning being shown
@@ -14,8 +15,10 @@ jest.mock('react-i18next', () => ({
   },
 }));
 
-test('renders learn react link', () => {
-  render(<App />);
-  // const linkElement = screen.getByText(/learn react/i);
-  // expect(linkElement).toBeInTheDocument();
+describe('DetailedView', () => {
+  it('should have the Book button', () => {
+    function mockHandler(value: boolean): void {}
+    render(<DetailedView handleClose={mockHandler} />);
+    expect(screen.getByText(/detailedView.title/i)).toBeInTheDocument();
+  });
 });

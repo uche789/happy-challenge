@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import { CircularProgress, makeStyles } from '@material-ui/core';
+import React, { Suspense } from 'react';
+import Grid from '@material-ui/core/Grid';
 import './App.css';
+import Item from './components/Item';
+import data from './data';
 
-function App() {
+const useStyles = makeStyles({
+  root: {
+    flexGrow: 1,
+  },
+});
+
+const App: React.FC = () => {
+  const classes = useStyles();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Suspense fallback={<CircularProgress />}>
+        <Grid className={classes.root} container spacing={2}>
+          {data.map((bookingData) => (
+            <Grid key={bookingData.id} item>
+              <Item bookingData={bookingData} />
+            </Grid>
+          ))}
+        </Grid>
+      </Suspense>
     </div>
   );
-}
+};
 
 export default App;
