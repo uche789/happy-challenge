@@ -53,7 +53,7 @@ const rawData = [
       },
       seats: 4,
       doors: 2,
-      hasAC: false,
+      hasAC: true,
     },
     supplier: {
       name: 'Interrent',
@@ -65,7 +65,7 @@ const rawData = [
         count: 519,
       },
     },
-    hasSanitationGuarantee: false,
+    hasSanitationGuarantee: true,
     price: {
       currencyCode: 'EUR',
       value: 50.400001525878906,
@@ -190,8 +190,8 @@ const rawData = [
       acrissCode: 'CCMR',
       gearType: 'manual',
       bags: {
-        min: 2,
-        max: 1,
+        min: 1,
+        max: 2,
       },
       seats: 5,
       doors: 2,
@@ -700,7 +700,7 @@ const rawData = [
       imageUrl:
         'https://vehicle-images.carrentalgateway.com/small/277ff295-b31a-4fde-94db-ae8b5756d1f8-izmo.png',
       acrissCode: 'MCMR',
-      gearType: 'manual',
+      gearType: 'automatic',
       bags: {
         min: 1,
         max: null,

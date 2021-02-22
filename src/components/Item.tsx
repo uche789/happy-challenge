@@ -16,6 +16,9 @@ const useStyles = makeStyles({
     minWidth: 300,
     boxShadow: 'none',
   },
+  actions: {
+    justifyContent: 'flex-end',
+  },
 });
 
 interface ItemProps {
@@ -43,7 +46,7 @@ const Item: React.FC<ItemProps> = ({ bookingData }) => {
     <>
       <Card className={classes.root} variant="outlined">
         <ItemContent bookingData={bookingData} />
-        <CardActions>
+        <CardActions className={classes.actions}>
           <Button size="small" onClick={handleShowDetails}>
             {t('item.detailsBtn')}
           </Button>

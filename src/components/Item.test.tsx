@@ -24,7 +24,6 @@ describe('Item', () => {
   it('should have vehicle data', () => {
     render(<Item bookingData={data[0]} />);
     expect(screen.getByText(data[0].vehicle.name)).toBeInTheDocument();
-    expect(screen.getByText(data[0].vehicle.seats)).toBeInTheDocument();
     expect(screen.getByText(data[0].vehicle.category)).toBeInTheDocument();
   });
 });

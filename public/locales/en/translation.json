@@ -1,4 +1,19 @@
 {
+  "title": "Book Now",
+  "filter": {
+    "filterBtn": "Filter",
+    "filters": "Filters",
+    "confirmBtn": "Confirm",
+    "cancelBtn": "Cancel",
+    "clearBtn": "Clear filters",
+    "gearType": "Gear Type",
+    "manual": "Manual",
+    "automatic": "Automatic",
+    "category": "Category",
+    "seats": "Seats",
+    "rateType": "Rate type",
+    "none": "None"
+  },
   "item": {
     "bookBtn": "Book",
     "detailsBtn": "View details"
@@ -6,8 +21,11 @@
   "itemContent": {
     "category": "Category",
     "gear": "Gear",
-    "seats": "Seats",
+    "seats": "{{count}} seats",
     "doors": "Doors",
+    "bags": "{{text}} bag(s)",
+    "bagsMin": "{{text}} bag(s) Min.",
+    "bagsMax": "{{text}} bag(s) Max.",
     "hasAC": "Air conditioning",
     "hasSanitationGuarantee": "Sanitation guarantee",
     "supplier": "Supplier",
