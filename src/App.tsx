@@ -49,6 +49,11 @@ const App: React.FC = () => {
               <Item bookingData={bookingData} />
             </Grid>
           ))}
+          {data.length === 0 && (
+            <Typography variant="h6" color="secondary">
+              No Results
+            </Typography>
+          )}
         </Grid>
       </Container>
     </div>
